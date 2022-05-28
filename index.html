@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="./images/favicon.ico.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,28 +22,34 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
 
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <script src="./jquery.js"></script>
   </head>
   <body>
-    <div class="fade">
-      <div><img src="./images/montain1.jpg" alt="" /></div>
-      <div><img src="./images/montain2.jpg" alt="" /></div>
-      <div><img src="./images/montain3.jpg" alt="" /></div>
-      <div><img src="./images/montain4.jpg" alt="" /></div>
-      <div><img src="./images/montain5.jpg" alt="" /></div>
-      <div><img src="./images/montain6.jpg" alt="" /></div>
-      <div><img src="./images/montain7.jpg" alt="" /></div>
-      <div><img src="./images/montain8.jpg" alt="" /></div>
+    <div class="content" id="content">
+    <ul class="content-list">
+      <li class="content__item"><a href="#hero" class="content__link">hero</a></li>
+      <li class="content__item"><a href="#advantage" class="content__link">advantage</a></li>
+      <li class="content__item"><a href="#work" class="content__link">work</a></li>
+      <li class="content__item"><a href="#team" class="content__link">team</a></li>
+      <li class="content__item"><a href="#client" class="content__link">client</a></li>
+    </ul>
     </div>
 
-    <div class="content" id="content"></div>
-    <ul>
-      <li><a href="#hero">hero</a></li>
-      <li><a href="#advantage">advantage</a></li>
-      <li><a href="#work">work</a></li>
-      <li><a href="#team">team</a></li>
-      <li><a href="#client">client</a></li>
-    </ul>
+
+    <div class="autoplay">
+      <div><img class="autoplay__item" src="./images/montain1.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain2.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain3.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain4.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain5.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain6.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain7.jpg" alt="" /></div>
+      <div><img class="autoplay__item" src="./images/montain8.jpg" alt="" /></div>
+    </div>
+
+    <a href="#" class="button-up hidden"></a>
 
     <section class="hero" id="hero">
       <div class="container">
@@ -354,14 +366,15 @@
     ></script>
 
     <!--<<<<<<<<<<<<<<<<<<<<<<<плавний перехід по якірним посиланням>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-    <!-- <script
-      type="text/javascript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
-    ></script> -->
 
     <script src="./content.js"></script>
 
     <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<слайдер>>>>>>>>>>>>>>>>>>>>>>>>> -->
     <script src="./slider.js"></script>
+
+    <!-- <<<<<<<<<<<<<<<<<<<кнопка повернення на верх>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <script type="text/javascript" src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script> 
+    
+    <script src="./return.js"></script>
   </body>
 </html>
